@@ -14,7 +14,6 @@ fun main (args: Array<String>){
 class Queue (){
     var tail = -1
     var head = -1
-    var elements:Int = 0
     val myQueue = Array<Int?>(3){ i -> null }
 
 
@@ -23,11 +22,9 @@ class Queue (){
                 println(myQueue.lastIndex)
                 tail = 0
                 myQueue[tail] = k
-                elements++
             } else {
                 tail++
                 myQueue[tail] = k
-                elements++
                 println("Index: $k")
             }
         }
@@ -45,7 +42,6 @@ class Queue (){
         head++
         value = myQueue[head]
         myQueue[head] = null
-        elements--
         return value
     }
 
