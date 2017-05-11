@@ -14,7 +14,6 @@ fun main (args: Array<String>){
 
 class Stack(){
     internal val myStack: ArrayList<Int> = ArrayList()
-    internal val top: Int = 0
 
     fun pop(): Int{
         var value = myStack.get(myStack.lastIndex)
